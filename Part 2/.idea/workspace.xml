@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3612048e-5b18-4e19-a35c-440ff6c1eef1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Part 1/wpm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/LinkedList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/Node.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/Part 3.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Debug/net8.0/Part 3.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Debug/net8.0/Part 3.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Debug/net8.0/Part 3.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Debug/net8.0/Part 3.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Debug/net8.0/Part 3.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Part 3.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Part 3.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/Part 3.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/Part 3/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Part 3/שאלות 1-4.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Part 2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Part 2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithmics.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithmics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/Part 2.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2g2mzCGzlwWMPnJiXFIOLYLEoEF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.algorithmics.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Repos/Pre_Course_HW/Part 2"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="algorithmics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Part 2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (.venv)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithmics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.algorithmics" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3612048e-5b18-4e19-a35c-440ff6c1eef1" name="Changes" comment="" />
+      <created>1714904307615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714904307615</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="number" />
+        <watch expression="sum_range" />
+        <watch expression="sum ** 2" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
