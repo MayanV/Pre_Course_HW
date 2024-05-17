@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Part3;
+
+NumericalExpression test = new(2048);
+Console.WriteLine(test);

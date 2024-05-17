@@ -1,14 +1,18 @@
+using System.Collections;
+
 namespace Part3
 {
     class LinkedList
     {
-        Node? Head { get; set; }
-        Node? Max { get; set; }
-        Node? Min { get; set; }
+        Node Head { get; set; }
+        Node Current { get; set; }
+        Node Max;
+        Node Min;
 
-        public LinkedList(Node? head)
+        public LinkedList(Node head)
         {
             Head = head;
+            Current = head;
             if (head == null || head.Next == null)
             {
                 Max = head;
@@ -16,36 +20,7 @@ namespace Part3
             }
         }
 
-        private void UpdateMinAndMax(Node? newLink)
-        {
-            if(IsNewMax(newLink))
-            {
-                Max = newLink;
-            }
-            if(IsNewMin(newLink))
-            {
-                Min = newLink;
-            }
-        }
-
-         private Node? GetTailFromNode(Node? currentNode)
-        {
-            if (currentNode == null || currentNode.Next == null)
-            {
-                return currentNode;
-            }
-            else
-            {
-                return GetTailFromNode(currentNode.Next);
-            }
-        }
-
-         internal Node? GetTail()
-        {
-            return GetTailFromNode(Head);
-        }
-
-        private bool IsNewMax(Node? newLink)
+        private bool IsNewMax(Node newLink)
         {
             if(Max != null && newLink != null && Max.Value > newLink.Value)
             {
@@ -57,7 +32,7 @@ namespace Part3
             }
         }
 
-        private bool IsNewMin(Node? newLink)
+        private bool IsNewMin(Node newLink)
         {
             if(Min != null && newLink != null && Min.Value < newLink.Value)
             {
@@ -69,9 +44,38 @@ namespace Part3
             }
         }
 
+        private void UpdateMinAndMax(Node newLink)
+        {
+            if(IsNewMax(newLink))
+            {
+                Max = newLink;
+            }
+            if(IsNewMin(newLink))
+            {
+                Min = newLink;
+            }
+        }
+
+         private Node GetTailFromNode(Node currentNode)
+        {
+            if (currentNode == null || currentNode.Next == null)
+            {
+                return currentNode;
+            }
+            else
+            {
+                return GetTailFromNode(currentNode.Next);
+            }
+        }
+
+         internal Node GetTail()
+        {
+            return GetTailFromNode(Head);
+        }
+
         public void Append(int item)
         {
-            Node? tail = GetTail();
+            Node tail = GetTail();
             Node newLink = new(item, null);
             UpdateMinAndMax(newLink);
 
@@ -95,9 +99,25 @@ namespace Part3
             Head = newLink;
         }
 
-        public Node? Unqueue()
+        public Node Pop()
         {
-            Node? firstNode = Head;
+            Node tail = GetTail();
+            if (Head == null || tail == null)
+            {
+                return null;
+            }
+            Node currentLink = Head;
+            while (currentLink.Next != tail && currentLink.Next != null)
+            {
+                currentLink = currentLink.Next;
+            }
+            currentLink.Next = null;
+            return tail;
+        }
+
+        public Node Unqueue()
+        {
+            Node firstNode = Head;
             if (Head != null)
             {
                 Head = Head.Next;
@@ -105,9 +125,19 @@ namespace Part3
             return firstNode;
         }
 
+         public IEnumerable<int> ToList()
+        {
+            Node current = Head;
+            while (current != null)
+            {
+                yield return current.Value;
+                current = current.Next;
+            }
+        }
+
         public bool IsCircular()
         {
-            Node? tail = GetTail();
+            Node tail = GetTail();
             if(Head == null || tail == null || tail.Next != Head)
             {
                 return false;
@@ -118,14 +148,35 @@ namespace Part3
             }
         }
 
-        /* Both GetMaxNode and GetMinNode are not needed since Min and Max already have getters.
-           I wasn't sure if it counts so i added them anyways. */
-        public Node? GetMinNode()
+        public List<int> ConvertToSortedList()
+        {
+            List<int> numbers = [];
+            Node current = Head;
+            while (current != null)
+            {
+                numbers.Add(current.Value);
+            }
+            numbers.Sort();
+            return numbers;
+        }
+
+        public void Sort()
+        {
+            List<int> sortedLinks = ConvertToSortedList();
+            Node current = Head;
+            foreach (int number in sortedLinks)
+            {
+                current.Value = number;
+                current = current.Next;
+            }
+        }
+
+        public Node GetMinNode()
         {
             return Min;
         }
 
-        public Node? GetMaxNode()
+        public Node GetMaxNode()
         {
             return Max;
         }
